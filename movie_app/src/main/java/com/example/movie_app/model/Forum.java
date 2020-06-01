@@ -23,6 +23,7 @@ public class Forum {
 
 
     public Forum(String userName, String post){
+        super();
         this.userName = userName;
         this.post = post;
     }

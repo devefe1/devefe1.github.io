@@ -22,6 +22,7 @@ public class Cart {
     }
 
     public Cart(String productName, long productPrice) {
+        super();
         this.productName = productName;
         this.productPrice= productPrice;
     }
