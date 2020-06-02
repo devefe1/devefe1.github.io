@@ -392,11 +392,4 @@ float: right;
 	  
   }
   
-  #title{
-	  color: white;
-	  font-size: 20px;
-	  display: flex;
-	  justify-content: center;
-	  text-transform: uppercase;
-	  margin-bottom: 20px;
-  }
+  
