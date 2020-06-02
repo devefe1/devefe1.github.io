@@ -6,7 +6,7 @@ import Login from './components/Login';
 import './App.css';
 import Search from './components/Search';
 import axios from 'axios';
-import Results from './components/movieproducts';
+import Results from './components/Results';
 import Popup from './components/Popup';
 
 function App() {
@@ -39,8 +39,11 @@ function App() {
         });
     }
 
-    const openPopup = id => { axios(apiurl + "&i=" + id ). then (({data}) => {
+    const openPopup = id => 
+    { axios(apiurl + "&i=" + id ). then (({data}) => {
       let result = data;
+
+            console.log (result);
 
       setState(prevState => {
         return { ...prevState, selected :result}
@@ -60,8 +63,9 @@ function App() {
     <div className="App">
        <main>
             <Search handleInput={handleInput} search={search} />
-            <Results results={state.results} />
-//if equals to undefined it won't show the popup but if it is defined it will show the popup
+            <Results results={state.results} openPopup={openPopup} />
+            
+{/* if equals to undefined it won't show the popup but if it is defined it will show the popup */}
             {(typeof state.selected.Title != "undefined") ? <Popup selected = {state.selected} closePopup={closePopup} /> :false}
             {/* <Movie /> */}
         </main>
