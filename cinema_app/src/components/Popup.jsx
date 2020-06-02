@@ -1,11 +1,22 @@
 import React from 'react';
-import Cart from './Cart';
 
 function Popup({selected, closePopup}) {
+ let addtoCart=()=> {
+        console.log("testing")
+        const addCart = {
+            method :"POST",
+            headers: { 'Content-Type' : 'application/json'},
+            body: JSON.stringify({
+                productName : selected.Title,
+                productPrice : 10})
+            }
+            fetch('/cart',addCart)
+        }
+    
     return (
         <section className = "popup">
             <div className = "content">
-             <Cart />
+             <button className="addToCart" onClick={addtoCart()}>Add to Cart + $10</button>
                 <h2>{selected.Title} <span> ({selected.Year})</span></h2>
                 
                 <p className="rating"> Rating: {selected.imdbRating}</p>
@@ -18,5 +29,6 @@ function Popup({selected, closePopup}) {
         </section>
     )
 }
+
 
 export default Popup;
