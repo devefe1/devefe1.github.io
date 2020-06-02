@@ -47,8 +47,11 @@ render () {
                     <input type="password" placeholder= "Password" name = "password" value = {user.password || ''} onChange={this.handleChange} />
                     <button type="submit" > Sign Up! </button>
                 </form>
+                    <Link id='yes-account' to = '/' > <p> Already have an account? Log in </p></Link>
             </div>
         </div>
-    )
+    );
+  }
 }
-}
+
+export default Signup;
