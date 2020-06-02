@@ -1,13 +1,11 @@
 import React from 'react';
-import Nav from './Nav';
-import Footer from './Footer';
-
+// import Footer from './Footer';
+import Picture from '../assets/picture.jpg';
 const Home = () => {
     return ( 
-        <div>
-            <Nav/>
-            <Footer/>
-        </div>
+        <div className = "Img">
+        <img className = "movieImg" src={Picture}  alt="fireSpot"/>
+     </div> 
      );
 }
  

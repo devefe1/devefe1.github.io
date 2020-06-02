@@ -41,7 +41,34 @@ section {
   padding: 15px ;
 }
 
+.header{
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	font-size: 25px;
+	padding: 8px;
+	color: #D4AF37;
+	margin: auto;
+	text-transform: uppercase;
+}
+.navBar ul{
+background-color:	#ADD8E6;
+  display: flex;
+  font-size: 18px;
+  justify-content: space-evenly;
+  list-style: none;
+  text-transform: uppercase;
+	padding: 10px;
+	border-top: 1px solid #D4AF37;
+	border-bottom: 1px solid #D4AF37;
+  }
+
+ #footer-links{
+	 text-decoration: none;
+	 color: white
+ }
 .searchBox {
+margin-top: 40px;
   display: block;
   width: 100%;
   padding: 15px;
@@ -189,4 +216,99 @@ float: right;
 }
 .popup .content .addToCart:hover{
   background: #223343;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 11% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+
+.form p {
+	margin : 15px 0 0;
+	color: #b3b3b3;
+	font-size: 12px;
+	
+}
+
+.movieImg{
+	max-width: 100%;
+  max-height: 100%;
+  width: 3840px;
+  height: 500px;
+  position: relative;
+}
+
+.footer{
+	
+	font-size: 15px;
+	font-weight: lighter;
+	background-color: #201E2C;
+	text-transform: uppercase;
+	text-align: center;
+  color: #fff;
+  padding: 7px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+#footerLinks{
+	text-decoration: none;
+	color: white;
+	display: flex;
+	padding-left: 48%;
+	list-style: none;
+	
+}
+#footer_Links{
+	text-decoration: none;
+	color: white;
+	display: flex;
+	padding-left: 44%;
+	list-style: none;
+	margin-top: 10px;
 }

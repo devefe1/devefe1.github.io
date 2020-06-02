@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Popup({selected, closePopup}) {
     return (
@@ -18,4 +18,4 @@ function Popup({selected, closePopup}) {
     )
 }
 
-export default Popup
+export default Popup;

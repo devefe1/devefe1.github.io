@@ -39,9 +39,9 @@ handleSubmit = async (e) => {
 render () {
     const {user} = this.state;
     return (
-        <div className='page'>
-            <div className= 'signupPage'>
-                <form className= 'signup' onSubmit = {this.handleSubmit} >
+        <div className='login-page'>
+            <div className= 'form'>
+                <form className= 'register-form' onSubmit = {this.handleSubmit} >
                     <input type="email" placeholder= "Email" name = "email" value = {user.email || ''} onChange={this.handleChange} />
                     <input type="text" placeholder= "UserName" name = "userName" value = {user.userName || ''} onChange={this.handleChange} />
                     <input type="password" placeholder= "Password" name = "password" value = {user.password || ''} onChange={this.handleChange} />

@@ -12,9 +12,9 @@ class Login extends Component {
 
     render() { 
         return ( 
-            <div className='page' >
             <div className='login-page' >
-                <form className='login' >
+            <div className='form' >
+                <form className='register-form' >
                     <input type="text" placeholder="User Name"/>
                     <input type="password" placeholder="Password" />
                     <button type="submit" > Login </button>
