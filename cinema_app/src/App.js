@@ -5,8 +5,8 @@ import Signup from './components/Signup';
 import Login from './components/Login';
 import './App.css';
 import Search from './components/Search';
-import axios from axios;
-// import Movie from './components/movieproducts';
+import axios from 'axios';
+import Results from './components/movieproducts';
 
 function App() {
     const [state, setState] = useState({
@@ -15,7 +15,7 @@ function App() {
       selected: {}
     });
 
-    const apiurl = "https://api.themoviedb.org/?api_key=5ca0c1882e4a693b0bbf1ff8ccdd25a2"
+    const apiurl = "http://www.omdbapi.com/?apikey=101f247f";
 
    
   const search = (e) => {
@@ -43,6 +43,7 @@ function App() {
     <div className="App">
        <main>
             <Search handleInput={handleInput} search={search} />
+            <Results results={state.results} />
             {/* <Movie /> */}
         </main>
 
