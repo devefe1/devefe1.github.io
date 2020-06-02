@@ -400,3 +400,50 @@ float: right;
 	text-transform: uppercase;
 	margin-bottom: 20px;
 }
+
+
+.delete {
+	display: inline-block;
+	padding: 10px 15px;
+	font-size: 10px;
+	font-weight: 700;
+	margin-left: 85%;
+	background: #4484C4;
+	color: #FFF;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	appearance: none;
+	cursor: pointer;
+	transition: 0.4s ease-out;
+	text-transform: uppercase;
+}
+
+.delete:hover {
+	background: #223343;
+}
+
+.cartPage{
+	
+		width: 750px;
+		height: 423px;
+		margin: 80px auto;
+		background: #FFFFFF;
+		box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+		border-radius: 6px;
+		display: flex;
+		flex-direction: column;
+}
+
+.cartField{
+	margin-top: 35px;
+	margin-left: 40px;
+}
+
+.productPrice{
+	margin-top: 5px;
+}
+
+.item{
+	text-transform: uppercase;
+}

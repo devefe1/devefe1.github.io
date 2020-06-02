@@ -9,6 +9,7 @@ import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Forum from './components/Forum';
+import Cart from './components/Cart';
 
 function App() {
     
@@ -24,6 +25,7 @@ function App() {
         <Route path='/login' component={Login} />
         <Route path='/movies' component={Movies} />
         <Route path='/forum' component={Forum} />
+        <Route path='/cart' component={Cart} />
       </Switch>
       <Footer />
     </Router>

@@ -1,6 +1,5 @@
 import React from 'react';
 import Result from './Result';
-import Cart from './Cart';
 
 function Results({ results, openPopup  }) {
     return (
