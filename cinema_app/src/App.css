@@ -201,7 +201,7 @@ margin-top: 40px;
 }
 
 .popup .content .addToCart{
-  display: inline-block;
+  /* display: inline-block; */
 	padding: 15px 12px;
 	font-size: 15px;
 	font-weight: 700;
@@ -213,7 +213,7 @@ margin-top: 40px;
 	outline: none;
 	appearance: none;
 	cursor: pointer;
-float: right;
+	float: right;
 	transition: 0.4s ease-out;
 }
 .popup .content .addToCart:hover{
@@ -407,20 +407,23 @@ float: right;
 	padding: 10px 15px;
 	font-size: 10px;
 	font-weight: 700;
-	margin-left: 85%;
-	background: #4484C4;
+	margin-left: 83%;
 	color: #FFF;
 	border-radius: 8px;
 	border: none;
 	outline: none;
 	appearance: none;
 	cursor: pointer;
-	transition: 0.4s ease-out;
 	text-transform: uppercase;
+	background: linear-gradient(to right, black 50%,  #4484C4 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	transition: all .3s ease-out;
 }
 
 .delete:hover {
-	background: #223343;
+	
+	background-position: left bottom;
 }
 
 .cartPage{
@@ -437,7 +440,7 @@ float: right;
 
 .cartField{
 	margin-top: 35px;
-	margin-left: 40px;
+	margin-left: 35px;
 }
 
 .productPrice{
