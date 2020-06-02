@@ -1,10 +1,11 @@
 import React from 'react';
+import Cart from './Cart';
 
 function Popup({selected, closePopup}) {
     return (
         <section className = "popup">
             <div className = "content">
-                
+             <Cart />
                 <h2>{selected.Title} <span> ({selected.Year})</span></h2>
                 
                 <p className="rating"> Rating: {selected.imdbRating}</p>
