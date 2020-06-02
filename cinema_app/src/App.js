@@ -7,6 +7,7 @@ import './App.css';
 import Search from './components/Search';
 import axios from 'axios';
 import Results from './components/movieproducts';
+import Popup from './components/Popup';
 
 function App() {
     const [state, setState] = useState({
@@ -54,12 +55,14 @@ function App() {
       });
     }
 
-    
+
   return (
     <div className="App">
        <main>
             <Search handleInput={handleInput} search={search} />
             <Results results={state.results} />
+//if equals to undefined it won't show the popup but if it is defined it will show the popup
+            {(typeof state.selected.Title != "undefined") ? <Popup selected = {state.selected} closePopup={closePopup} /> :false}
             {/* <Movie /> */}
         </main>
 
