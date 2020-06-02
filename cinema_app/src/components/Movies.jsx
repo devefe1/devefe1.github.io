@@ -7,7 +7,7 @@ import Popup from './Popup';
 
 function Movies() {
     const [state, setState] = useState({
-      price: 20,
+      price: 10,
       s: "",
       results: [],
       selected: {}
