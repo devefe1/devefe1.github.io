@@ -8,6 +8,7 @@ import NavBar from './components/NavBar';
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Forum from './components/Forum';
 
 function App() {
     
@@ -22,6 +23,7 @@ function App() {
         <Route path='/signup' component={Signup}/>
         <Route path='/login' component={Login} />
         <Route path='/movies' component={Movies} />
+        <Route path='/forum' component={Forum} />
       </Switch>
       <Footer />
     </Router>

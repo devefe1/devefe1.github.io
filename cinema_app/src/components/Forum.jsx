@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 
 class Forum extends Component {
     constructor(props) {
@@ -51,22 +50,20 @@ class Forum extends Component {
         const {forum} = this.state;
         return ( 
             <div className='forum-page' >
-                <h1 id='title' > Leave movie reviews! </h1>
+                <h1 id='title' > Leave a review Below! </h1>
                 <form className='posts' onSubmit = {this.handleSubmit} >
                     <input type="text" placeholder="User Name (Optional)" name="userName" value={forum.userName || ''} onChange = {this.handleChange} />
-                    <textarea type="text" placeholder="Write a forum post" name="post" value={forum.post || ''} onChange = {this.handleChange} />
-                    <button> Submit Review ! </button>
+                    <textarea type="text" placeholder="Write a review" name="post" value={forum.post || ''} onChange = {this.handleChange} />
+                    <button> Submit Review</button>
                 </form>
                 {this.state.updatedForum.map(post => (
                     <div>
                         <ul>
                             <h3 > {post.userName} </h3>
-                            <li key={post.id} > {post.post} </li>
+                            <p key={post.id} > {post.post} </p>
                         </ul>
-                        <Link id='footer-links' to='/forum' className="forum"> </Link>
                     </div>
                 ))}
-                 
             </div>
          );
     }
