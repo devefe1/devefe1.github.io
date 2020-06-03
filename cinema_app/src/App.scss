@@ -6,7 +6,7 @@
 
 body {
 	font-family: 'montserrat', sans-serif;
-	background-color: #223343;
+	background-color: whitesmoke;
 }
 
 header {
@@ -47,7 +47,7 @@ section {
 	display: flex;
 	justify-content: center;
 	font-size: 40px;
-	color: #D4AF37;
+	color:#FFDF00;
 	margin: auto;
 	text-transform: uppercase;
 }
@@ -83,10 +83,11 @@ margin-top: 40px;
   background-color: white;
 
   color: black;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
 
   transition: 0.4s ease-out;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .searchBox:focus {
@@ -258,7 +259,7 @@ $font-family: "Roboto", sans-serif;
   font-family:$font-family;
   text-transform: uppercase;
   outline: 0;
-  background: #4CAF50;
+  background: #ADD8E6;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -269,7 +270,7 @@ $font-family: "Roboto", sans-serif;
   cursor: pointer;
 }
 .form button:hover,.form button:active,.form button:focus {
-  background: #43A047;
+  background:  black;
 }
 
 .form p {
@@ -308,29 +309,35 @@ $background-color:  #201E2C;
 	text-transform: uppercase;
 	text-align: center;
   color: #fff;
-  padding: 7px;
+  padding: 5px;
   position: absolute;
   bottom: 0;
   width: 100%;
   position: fixed;
   z-index: 1;
+  border-top: 4px solid #D4AF37
 }
 
 #footerLinks{
 	text-decoration: none;
+	padding-top: 2px;
 	color: white;
 	display: flex;
 	padding-left: 48%;
 	list-style: none;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	
 }
 #footer_Links{
 	text-decoration: none;
-	color: white;
+	color:#FFDF00;
 	display: flex;
 	padding-left: 44%;
 	list-style: none;
 	margin-top: 10px;
+	margin-left: 7px;
+	font-size: 20px;
+	font-family: 'Teko', sans-serif;
 }
 
 
@@ -389,23 +396,25 @@ $background-color:  #201E2C;
 	cursor: pointer;
   }
   .forum-page button:hover,.form button:active,.form button:focus {
-	background: rgb(105, 22, 22);
+	background: cornflowerblue;;
   }
   
   .forum-page p {
 	  margin : 15px 0 0;
 	  color: #b3b3b3;
 	  font-size: 12px;
+	 
 	  
   }
   
   #title{
-	color: white;
+	color: black;
 	font-size: 20px;
 	display: flex;
 	justify-content: center;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	
 }
 
 
@@ -422,7 +431,7 @@ $background-color:  #201E2C;
 	appearance: none;
 	cursor: pointer;
 	text-transform: uppercase;
-	background: linear-gradient(to right, black 50%,  #4484C4 50%);
+	background: linear-gradient(to right, white 50%,  black 50%);
 	background-size: 200% 100%;
 	background-position: right bottom;
 	transition: all .3s ease-out;
@@ -459,15 +468,6 @@ $background-color:  #201E2C;
 }
 
 
-
-.forumWrap {
-	width: 550px;
-	padding: 11% 0 0;
-	margin: auto;
-	
-  }
-  
-
   .forumWrap ul {
 	font-family: "Roboto", sans-serif;
 	outline: 0;
@@ -478,9 +478,11 @@ $background-color:  #201E2C;
 	padding: 15px;
 	box-sizing: border-box;
 	font-size: 14px;
+	border: 1px solid black;
   }
 
   .forumWrap p{
+
 	font-family: "Roboto", sans-serif;
 	outline: 0;
 	background: #f2f2f2;
@@ -525,6 +527,9 @@ $background-color:  #201E2C;
 	cursor: pointer;
   }
 
+  .checkout_Button:hover,.form button:active,.form button:focus {
+	background:  black;
+  }
 
   
   .innerbuttonContainer{
