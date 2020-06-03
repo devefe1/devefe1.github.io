@@ -15,7 +15,7 @@ class Cart extends Component {
 
     componentDidMount = async () => {
         try {
-            const cart = await axios.get('/cart');
+            const cart = await axios.get('https://cors-anywhere.herokuapp.com/https://moviecinema.herokuapp.com/cart');
             this.setState({cartProducts: cart.data});
             console.log(cart.data)
 
@@ -28,7 +28,7 @@ class Cart extends Component {
     deletedMovies = async (id) => {
         const {cartProducts} = this.state;
         try{
-            const deletedCart = await axios.delete(`/cart/${id}` , cartProducts);
+            const deletedCart = await axios.delete(`https://cors-anywhere.herokuapp.com/https://moviecinema.herokuapp.com/cart/${id}` , cartProducts);
             let deletedProducts = [...this.state.cartProducts].filter(i => i.id !== id)
             this.setState({cartProducts: deletedProducts})
             // this.setState({cartProducts: cart.data});

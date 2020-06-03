@@ -10,7 +10,7 @@ function Popup({selected, closePopup}) {
                 productName : selected.Title,
                 productPrice : 10})
             }
-            fetch('/cart',addCart)
+            fetch('https://cors-anywhere.herokuapp.com/https://moviecinema.herokuapp.com/cart',addCart)
         }
     
     return (

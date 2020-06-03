@@ -29,7 +29,7 @@ handleSubmit = async (e) => {
     e.preventDefault();
     const {user} = this.state;
     try {
-        const response = await axios.post ('/users', user)
+        const response = await axios.post ('https://cors-anywhere.herokuapp.com/https://moviecinema.herokuapp.com/users', user)
         console.log(response.data)
     } catch (e) {
         console.log(e);

@@ -18,7 +18,7 @@ class Forum extends Component {
 
     componentDidMount = async () => {
         try {
-            const response = await axios.get('/forum')
+            const response = await axios.get('https://cors-anywhere.herokuapp.com/https://moviecinema.herokuapp.com/forum')
             this.setState({updatedForum: response.data})
             console.log(response.data); 
         } catch (e) {
@@ -39,7 +39,7 @@ class Forum extends Component {
         e.preventDefault();
         const {forum} = this.state;
         try {
-            const newPost = await axios.post('/forum', forum)
+            const newPost = await axios.post('https://cors-anywhere.herokuapp.com/https://moviecinema.herokuapp.com/forum', forum)
             console.log(newPost.data);
         } catch (e) {
             console.log(e);
@@ -50,16 +50,18 @@ class Forum extends Component {
     editPost = async (id) => {
         const {forum} = this.state;
         try{
-            const updatemyPost = await axios.put(`/forum/${id}` , forum);
+            const updatemyPost = await axios.put(`https://cors-anywhere.herokuapp.com/https://moviecinema.herokuapp.com/forum/${id}` , forum);
             let updatedPosts = [...this.state.forum].filter(i => i.id !== id)
             this.setState({forum: updatedPosts})
             console.log(updatemyPost.data)
 
+            
        //catch errors     
         } catch (e) {
             console.log(e);
         }
     }
+
 
 
     render() { 
