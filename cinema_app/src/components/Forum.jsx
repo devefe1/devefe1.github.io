@@ -13,6 +13,7 @@ class Forum extends Component {
          };
          this.handleChange = this.handleChange.bind(this);
          this.handleSubmit = this.handleSubmit.bind(this);
+         this.editPost = this.editPost.bind(this)
     }
 
     componentDidMount = async () => {
@@ -46,6 +47,21 @@ class Forum extends Component {
         
     }
 
+    editPost = async (id) => {
+        const {forum} = this.state;
+        try{
+            const updatemyPost = await axios.put(`/forum/${id}` , forum);
+            let updatedPosts = [...this.state.forum].filter(i => i.id !== id)
+            this.setState({forum: updatedPosts})
+            console.log(updatemyPost.data)
+
+       //catch errors     
+        } catch (e) {
+            console.log(e);
+        }
+    }
+
+
     render() { 
         const {forum} = this.state;
         return ( 
@@ -57,10 +73,11 @@ class Forum extends Component {
                     <button> Submit Review</button>
                 </form>
                 {this.state.updatedForum.map(post => (
-                    <div>
+                    <div key={post.id} className="forumWrap">
                         <ul>
                             <h3 > {post.userName} </h3>
-                            <p key={post.id} > {post.post} </p>
+                            <p  > {post.post} </p>
+                            <button className="updateEdit" onClick={() => this.editPost(post.id)}>Edit</button>
                         </ul>
                     </div>
                 ))}

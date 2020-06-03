@@ -69,6 +69,7 @@ background-color:	#ADD8E6;
 	 text-decoration: none;
 	 color: white
  }
+
 .searchBox {
 margin-top: 40px;
   display: block;
@@ -80,7 +81,6 @@ margin-top: 40px;
   background: none;
 
   background-color: white;
-  border-radius: 8px;
 
   color: black;
   font-size: 20px;
@@ -228,6 +228,10 @@ margin-top: 40px;
   padding: 11% 0 0;
   margin: auto;
 }
+
+$box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+$font-family: "Roboto", sans-serif;
+
 .form {
   position: relative;
   z-index: 1;
@@ -236,10 +240,11 @@ margin-top: 40px;
   margin: 0 auto 100px;
   padding: 45px;
   text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: $box-shadow;
 }
+
 .form input {
-  font-family: "Roboto", sans-serif;
+  font-family: $font-family;
   outline: 0;
   background: #f2f2f2;
   width: 100%;
@@ -250,7 +255,7 @@ margin-top: 40px;
   font-size: 14px;
 }
 .form button {
-  font-family: "Roboto", sans-serif;
+  font-family:$font-family;
   text-transform: uppercase;
   outline: 0;
   background: #4CAF50;
@@ -293,11 +298,13 @@ margin-top: 40px;
   margin-top: -4px;
 }
 
+$background-color:  #201E2C;
+
 .footer{
 	
 	font-size: 15px;
 	font-weight: lighter;
-	background-color: #201E2C;
+	background-color: $background-color;
 	text-transform: uppercase;
 	text-align: center;
   color: #fff;
@@ -409,7 +416,7 @@ margin-top: 40px;
 	font-weight: 700;
 	margin-left: 83%;
 	color: #FFF;
-	border-radius: 8px;
+	border-radius: 2px;
 	border: none;
 	outline: none;
 	appearance: none;
@@ -429,8 +436,8 @@ margin-top: 40px;
 .cartPage{
 	
 		width: 750px;
-		height: 423px;
-		margin: 80px auto;
+		height: 550px;
+		margin: 50px auto;
 		background: #FFFFFF;
 		box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
 		border-radius: 6px;
@@ -450,3 +457,98 @@ margin-top: 40px;
 .item{
 	text-transform: uppercase;
 }
+
+
+
+.forumWrap {
+	width: 550px;
+	padding: 11% 0 0;
+	margin: auto;
+	
+  }
+  
+
+  .forumWrap ul {
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+  }
+
+  .forumWrap p{
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+  }
+
+  .forumWrap button {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: #4CAF50;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+  }
+
+  .checkout_Button{
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background:#4484C4;
+	float: bottom;
+	margin-left: 40%;
+	font-weight: bolder;
+	width: 20%;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+  }
+
+
+  
+  .innerbuttonContainer{
+	position: absolute;
+  bottom: 20%;
+  width: 100%;
+  z-index: 1; 
+  left: 0%;
+  }
+
+  .aboutHead{
+	font-family: 'Teko', sans-serif;
+	font-size: 35px;
+	border-bottom: 2px solid #D4AF37;
+	display: inline-block;
+	line-height: 0.85;
+  }
+  
+  .about{
+	color: white;
+	text-align: center;
+	list-style: none;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	padding-top: 30px;
+	padding-bottom: 35px;
+  }
+  

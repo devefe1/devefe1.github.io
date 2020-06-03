@@ -15,4 +15,4 @@ An app that provides movie information with the ratings, year, a quick little de
 The target users are people who want to know about movies and also engage with the community. This app enables you to order a movie from home and watch it in the comfort of your home during this pandemic ensuring a safe amd sound enviroment.
 
 ###Technologies used
-Used React, Spring, Java , Axios, Link from React-Dom
+Used React, Spring, Java , Axios, Link from React-Dom and used SASS for my css.

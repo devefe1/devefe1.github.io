@@ -5,7 +5,7 @@ import Signup from './components/Signup';
 import Login from './components/Login';
 import Movies from './components/Movies';
 import NavBar from './components/NavBar';
-import './App.css';
+import './App.scss';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Forum from './components/Forum';

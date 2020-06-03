@@ -11,6 +11,7 @@ class Cart extends Component {
          this.deletedMovies = this.deletedMovies.bind(this)
     }
 
+    
 
     componentDidMount = async () => {
         try {
@@ -41,15 +42,23 @@ class Cart extends Component {
 
     render() { 
         return ( 
-            <div className="cartPage" >
-               {this.state.cartProducts.map(item =>(
-                   <div className="cartField"key={item.id}> 
-                       <h3 className="item">{item.productName}</h3>
-                       <p className="productPrice">{item.productPrice} <button className="delete" onClick={() => this.deletedMovies(item.id)}>Delete</button></p>
-                       
+            <div>
+                
+                <div className="cartPage" >
+                {this.state.cartProducts.map(item =>(
+                    <div className="cartField"key={item.id}> 
+                        <h3 className="item">{item.productName}</h3>
+                        <p className="productPrice">{item.productPrice} <button className="delete" onClick={() => this.deletedMovies(item.id)}>Delete</button></p> 
+                    </div>
 
-                   </div>
-               ))}
+                ))}
+                     <div className="innerbuttonContainer">
+               <button className="checkout_Button"> Check Out</button>
+              
+               </div>
+                </div>
+
+                
             </div>
          );
     }
