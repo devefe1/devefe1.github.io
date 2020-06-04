@@ -6,7 +6,7 @@ https://devefe1.github.io/devefe1.github.io/
 
 ##which API I'm using
 
-your3rdpartyapi.com
+http://omdbapi.com/
 
 ##problem statement
 An app that provides movie information with the ratings, year, a quick little description to give you an overview about a specific movie, an ability to add comments, login, sign up and add certain movies to cart to be able to watch.

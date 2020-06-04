@@ -2,7 +2,7 @@
 
 ##application url
 
-yourdeployedapp.com
+https://devefe1.github.io/devefe1.github.io/
 
 ##which API I'm using
 
@@ -16,3 +16,6 @@ The target users are people who want to know about movies and also engage with t
 
 ###Technologies used
 Used React, Spring, Java , Axios, Link from React-Dom and used SASS for my css.
+
+###Problem i was not able to solve
+Could not figure out how to edit my Forum. When i clicked the edit button it made the posts disappear in the text box. 
