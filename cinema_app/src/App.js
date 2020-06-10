@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {HashRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/Home';
 import Signup from './components/Signup';
 import Login from './components/Login';
@@ -20,7 +20,7 @@ function App() {
     <Router>
         <NavBar />
       <Switch>
-        <Route path='/' exact component={Home} />
+        <Route exact path='/'  component={Home} />
         <Route path='/signup' component={Signup}/>
         <Route path='/login' component={Login} />
         <Route path='/movies' component={Movies} />
