@@ -2,7 +2,7 @@
 
 ##application url
 
-https://devefe1.github.io/devefe1.github.io/
+https://devefe1.github.io/movieapp/
 
 ##which API I'm using
 
