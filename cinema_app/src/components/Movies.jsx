@@ -12,7 +12,7 @@ function Movies() {
       selected: {}
     });
 
-    const apiurl = "http://www.omdbapi.com/?apikey=101f247f";
+    const apiurl = "https://www.omdbapi.com/?apikey=101f247f";
 
    
   const search = (e) => {
